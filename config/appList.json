@@ -1,0 +1,205 @@
+{
+    "app": [
+        {
+            "id": "dtst",
+            "name": "堆糖搜图",
+            "event": "message",
+            "priority": 114514,
+            "rule": [
+                {
+                    "index": "1-1",
+                    "reg": "^#堆糖搜.*$",
+                    "isOnline": true,
+                    "ml": "#堆糖搜xx",
+                    "fnc": "dtst",
+                    "des": "堆糖搜图，貌似这个接口不太准确~暂时不想修"
+                }
+            ]
+        },
+        {
+            "id": "dgmn",
+            "name": "灯光模拟",
+            "event": "message",
+            "priority": 114514,
+            "rule": [
+                {
+                    "index": "2-1",
+                    "reg": "^#灯光模拟$|#打(.*)",
+                    "isOnline": true,
+                    "ml": "#灯光模拟",
+                    "fnc": "dgmn",
+                    "des": "科目三灯光模拟练习"
+                },
+                {
+                    "index": "2-2",
+                    "reg": "^#结束灯光$",
+                    "isOnline": true,
+                    "ml": "#结束灯光",
+                    "fnc": "jieshu",
+                    "des": "结束灯光模拟"
+                }
+            ]
+        },
+        {
+            "id": "pixiv",
+            "name": "pixiv搜图",
+            "event": "message",
+            "priority": 114514,
+            "rule": [
+                {
+                    "index": "3-1",
+                    "reg": "^#p站搜.*$",
+                    "isOnline": true,
+                    "ml": "#p站搜xx",
+                    "fnc": "pSt",
+                    "des": "pixiv搜图"
+                }
+            ]
+        },
+        {
+            "id": "jrtj",
+            "name": "今日推荐",
+            "event": "message",
+            "priority": 114514,
+            "rule": [
+                {
+                    "index": "4-1",
+                    "reg": "^#今日推荐$",
+                    "isOnline": true,
+                    "ml": "#今日推荐",
+                    "fnc": "jrtj",
+                    "des": "随机推荐3个带封面展示的车牌号，建议搭配 #搜车牌 命令使用"
+                }
+            ]
+        },
+        {
+            "id": "zz",
+            "name": "张嘴",
+            "event": "message",
+            "priority": 114514,
+            "rule": [
+                {
+                    "index": "5-1",
+                    "reg": "^张嘴.*$",
+                    "isOnline": true,
+                    "ml": "张嘴|张嘴xx",
+                    "fnc": "zz",
+                    "des": "张嘴有急事\n更新日志：2023/3/2 加了几张图"
+                }
+            ]
+        },
+        {
+            "id": "scl",
+            "name": "磁力",
+            "event": "message",
+            "priority": 114514,
+            "rule": [
+                {
+                    "index": "6-1",
+                    "reg": "^#搜车牌.*$",
+                    "isOnline": true,
+                    "ml": "#搜车牌xx",
+                    "fnc": "scl",
+                    "des": "获取一些车牌的信息"
+                },
+                {
+                    "index": "6-2",
+                    "reg": "^#搜老师.*$",
+                    "isOnline": true,
+                    "ml": "#搜老师xx",
+                    "fnc": "sls",
+                    "des": "获取一些老师的信息"
+                }
+            ]
+        },
+        {
+            "id": "sh",
+            "name": "说",
+            "event": "message",
+            "priority": 114514,
+            "rule": [
+                {
+                    "index": "7-1",
+                    "reg": "^说.*$",
+                    "hide": false,
+                    "isOnline": true,
+                    "ml": "说xx",
+                    "fnc": "say",
+                    "des": "文字转语音功能"
+                }
+            ]
+        },
+
+
+        {
+            "id": "cd",
+            "name": "彩蛋",
+            "event": "message",
+            "priority": 114514,
+            "rule": [
+                {
+                    "index": "114514",
+                    "reg": "^#?冰冰",
+                    "hide": false,
+                    "isOnline": true,
+                    "ml": "神秘指令",
+                    "fnc": "bb",
+                    "des": "一条神秘指令，需要自己发现"
+                },
+                {
+                    "index": "114514",
+                    "reg": "^#来个冰冰$|^#来个王冰冰",
+                    "hide": true,
+                    "isOnline": true,
+                    "ml": "神秘指令",
+                    "fnc": "bing",
+                    "des": "一条神秘指令，需要自己发现"
+                }
+            ]
+        },
+        {
+            "id": "",
+            "name": "",
+            "event": "message",
+            "priority": 114514,
+            "rule": [
+                {
+                    "index": "",
+                    "reg": "",
+                    "hide": true,
+                    "isOnline": false,
+                    "ml": "#demo",
+                    "fnc": "",
+                    "des": ""
+                }
+            ]
+        },
+        {
+            "id": "zlbz",
+            "isOnline": true,
+            "name": "指令帮助",
+            "event": "message",
+            "priority": 114514,
+            "rule": [
+                {
+                    "index": "0-1",
+                    "reg": "^#指令帮助$",
+                    "hide": true,
+                    "isOnline": true,
+                    "ml": "#指令帮助",
+                    "fnc": "zlbz",
+                    "des": "获取本插件的指令"
+                },
+                {
+                    "index": "0-2",
+                    "reg": "^#上线(.*)$|#下线(.*)",
+                    "hide": true,
+                    "isOnline": true,
+                    "ml": "#上线xx|下线xx",
+                    "fnc": "editzl",
+                    "des": "修改指令的状态"
+                }
+            ]
+        }
+    ]
+}
